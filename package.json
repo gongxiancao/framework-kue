@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gongxiancao/framework-kue#readme",
   "dependencies": {
+    "bluebird": "3.3.5",
     "kue": "0.10.5"
   }
 }
