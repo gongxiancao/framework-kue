@@ -1,0 +1,22 @@
+{
+  "name": "framework-kue",
+  "version": "1.0.0",
+  "description": "framework kue plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gongxiancao/framework-kue.git"
+  },
+  "author": "GongXian Cao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gongxiancao/framework-kue/issues"
+  },
+  "homepage": "https://github.com/gongxiancao/framework-kue#readme",
+  "dependencies": {
+    "kue": "0.10.5"
+  }
+}
