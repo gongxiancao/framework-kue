@@ -66,7 +66,6 @@ function lift (done) {
       }
 
       job.save(function (err) {
-        console.log('xxxxyyy', job);
         if(done) {
           done(err, job);
         }
