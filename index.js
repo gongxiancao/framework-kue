@@ -120,9 +120,8 @@ function lift (done) {
         }
         var staleJobs = [];
         async.each(jobs, function (job, done) {
-          var ttl = job.ttl();
-          var expired = Number(job.created_at) + Number(ttl);
-          if (expired < timestamp) {
+          var createdAt = Number(job.created_at);
+          if (createdAt < timestamp) {
             staleJobs.push({id: job.id});
             job.remove(done);
           } else {
