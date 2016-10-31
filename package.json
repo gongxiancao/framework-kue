@@ -1,21 +1,21 @@
 {
-  "name": "framework-kue",
+  "name": "ofa-kue",
   "version": "1.0.0",
-  "description": "framework kue plugin",
+  "description": "ofa kue plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gongxiancao/framework-kue.git"
+    "url": "git+https://github.com/gongxiancao/ofa-kue.git"
   },
   "author": "GongXian Cao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gongxiancao/framework-kue/issues"
+    "url": "https://github.com/gongxiancao/ofa-kue/issues"
   },
-  "homepage": "https://github.com/gongxiancao/framework-kue#readme",
+  "homepage": "https://github.com/gongxiancao/ofa-kue#readme",
   "dependencies": {
     "bluebird": "3.3.5",
     "kue": "0.10.5"

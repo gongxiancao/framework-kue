@@ -1,2 +1,2 @@
-# framework-kue
-framework kue plugin
+# ofa-kue
+ofa kue plugin

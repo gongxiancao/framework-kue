@@ -21,7 +21,7 @@ var Promise = require('bluebird');
 var kue = require('kue');
 
 function lift (done) {
-  var kueConfig = framework.config.kue;
+  var kueConfig = ofa.config.kue;
   if(!kueConfig) {
     throw new Error('require kue config');
   }
@@ -31,7 +31,7 @@ function lift (done) {
     throw new Error('require kue connection name');
   }
 
-  var connectionConfig = framework.config.connections[connectionName] || {};
+  var connectionConfig = ofa.config.connections[connectionName] || {};
   var queue = kue.createQueue({
     prefix: kueConfig.prefix,
     redis: {
@@ -41,7 +41,7 @@ function lift (done) {
     }
   });
 
-  framework.kue = {
+  ofa.kue = {
     queue: queue,
     //create a new job and insert it into kue
     createJob: function (name, data, options, done) {
